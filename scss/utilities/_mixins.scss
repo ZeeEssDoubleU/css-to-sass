@@ -1,0 +1,32 @@
+// Text mixin
+
+@mixin text($font-size, $color: null, $line-height: null, $font-weight: null) {
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    font-weight: $font-weight;
+}
+
+// Margin, max-width, width mixin
+
+@mixin max-width($margin, $max-width: null, $width: null) {
+    margin: $margin;
+    max-width: $max-width;
+    width: $width;
+}
+
+// Margin, width, mixin
+
+@mixin width($margin, $width: null) {
+    margin: $margin;
+    width: $width;
+}
+
+// Padding, margin, border, radius mixin
+
+@mixin box($margin, $padding: null, $border: null, $radius: null) {
+    margin: $margin;
+    padding: $padding;
+    border: $border;
+    border-radius: $radius;
+}

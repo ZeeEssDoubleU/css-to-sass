@@ -1,0 +1,54 @@
+/******************************************
+Portfolio section styles
+******************************************/
+
+#portfolio {
+    background: $color-background-portfolio;
+    padding: 2.625rem 0;
+    @extend %clearfix;
+    @media #{$brk-wide} {
+        @include max-width(auto, 1100px, 95%);
+    }
+    .container {
+        @extend %clearfix;
+        @media #{$brk-narrow} {
+            margin: auto auto -2.2rem;
+        }
+    }
+}
+#portfolio-container {
+    list-style: none;
+    padding: 0;
+    @extend %clearfix;
+    @media #{$brk-narrow} {
+        li:nth-child(3n) {
+            clear: left;
+        }
+        li:nth-child(6n) {
+            clear: right;
+        }
+    }
+    @media #{$brk-wide} {
+        li:nth-child(3n) {
+            clear: none;
+        }
+        li:nth-child(4n) {
+            clear: left;
+        }
+    }
+}
+.portfolio-section {
+    margin: 1.875rem 0 0;
+    @media #{$brk-narrow} {
+        max-width: 49%;
+        float: left;
+        p {
+            max-width: 79.5%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media #{$brk-wide} {
+        max-width: 32%;
+    }
+}

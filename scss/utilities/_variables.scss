@@ -1,0 +1,33 @@
+// Color variables
+
+$white                          : #fff;
+$black                          : #000;
+$red                            : red;
+$bazaar                         : rgb(142,127,127);
+$dark-gray                      : rgb(175,175,175);
+$very-light-gray                : rgb(200,200,200);
+$gainsboro                      : rgb(225,225,225);
+$white-off                      : rgb(250,250,250);
+
+
+// Functional color variables
+
+$color-text                     : $black;
+$color-text-light               : rgba($black, .7);
+$color-text-nav                 : rgba($black, .8);
+$color-text-hover               : $red;
+$color-text-communication       : $bazaar;
+$color-background-body          : $white;
+$color-background-home          : darken($white, 31%);
+$color-background-portfolio     : darken($white, 22%);
+$color-background-about         : darken($white, 12%);
+$color-background-contact       : darken($white, 2%);
+$color-background-nav-sm        : $white;
+$color-background-nav-md        : $color-background-home;
+$color-border                   : $white;
+$color-border-top-footer        : rgba($black, .1);
+
+// Media query breakpoints
+
+$brk-narrow                     : '(min-width: 768px)';
+$brk-wide                       : '(min-width: 1024px)';

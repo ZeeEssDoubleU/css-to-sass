@@ -1,0 +1,26 @@
+/******************************************
+Column styles
+******************************************/
+
+@media #{$brk-narrow} {
+    .col-768-left {
+        margin-right: 1%;
+    }
+    .col-768-right {
+        margin-left: 1%;
+    }
+}
+@media #{$brk-wide} {
+    .col-1024-left {
+        margin-right: 1%;
+        margin-left: 0;
+    }
+    .col-1024-mid {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    .col-1024-right {
+        margin-right: 0;
+        margin-left: 1%;
+    }
+}

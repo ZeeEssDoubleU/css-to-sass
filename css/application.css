@@ -1,0 +1,461 @@
+#home:after, #home .container:after, header:after, #portfolio:after, #portfolio .container:after, #portfolio-container:after, #about:after, #about .container:after, #about-container:after, #contact:after, #contact-container:after, footer:after, #footer-container:after, footer nav:after, #contact-details:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+#home p, #contact-container p, #contact-details li {
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/******************************************
+Global styles
+******************************************/
+* {
+  font-size: 16px;
+  color: #000;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-weight: 300;
+  font-size: .95rem;
+  margin-top: .875rem;
+}
+
+h1 {
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin-bottom: 2.75rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 1.4375rem 0 0 0;
+}
+
+.border {
+  border: solid #fff 5px;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 95%;
+  margin: auto 2.5%;
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+/******************************************
+Global image styles
+******************************************/
+img {
+  max-width: 100%;
+}
+
+/******************************************
+Global link/list styles
+******************************************/
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+/******************************************
+Home section styles
+******************************************/
+#home {
+  padding-bottom: 2.3125rem;
+  background: #b0b0b0;
+}
+@media (min-width: 768px) {
+  #home {
+    margin: 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  #home {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 95%;
+  }
+}
+@media (min-width: 768px) {
+  #home .container {
+    margin: 0 2.5%;
+    width: 95%;
+  }
+  #home .container img {
+    margin: 0;
+    max-width: 42%;
+    float: right;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  #home p {
+    margin: auto;
+    max-width: 56%;
+    float: left;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 1.7rem;
+    padding: 0;
+  }
+}
+
+header {
+  padding-top: 1.375rem;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 3rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 3.7rem 0 2.0rem;
+  }
+}
+
+header .name {
+  font-size: 1.5rem;
+  margin: 1.375rem auto;
+  margin-top: 0;
+}
+@media (min-width: 1024px) {
+  header .name {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+}
+
+/******************************************
+Home image styles
+******************************************/
+#home img {
+  max-width: 67%;
+  /*200px/320px*/
+  margin: 1.875rem 0 .75rem 0;
+}
+
+/******************************************
+Home link/list styles
+******************************************/
+header nav ul {
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  header nav ul {
+    margin: auto;
+    padding: 0;
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) {
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+}
+header nav ul li {
+  margin: 0.3125rem auto;
+  padding: 0.5rem 0;
+  background: #fff;
+  height: 2.5rem;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  header nav ul li {
+    background: #b0b0b0;
+    display: inline-block;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+  }
+}
+@media (min-width: 1024px) {
+  header nav ul li {
+    margin: 0.3rem 0 0 2.5rem;
+    padding: 0;
+    display: inline-block;
+  }
+}
+header nav ul li a {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media (min-width: 1024px) {
+  header nav ul li a {
+    padding: 0;
+  }
+}
+
+/******************************************
+Portfolio section styles
+******************************************/
+#portfolio {
+  background: #c7c7c7;
+  padding: 2.625rem 0;
+}
+@media (min-width: 1024px) {
+  #portfolio {
+    margin: auto;
+    max-width: 1100px;
+    width: 95%;
+  }
+}
+@media (min-width: 768px) {
+  #portfolio .container {
+    margin: auto auto -2.2rem;
+  }
+}
+
+#portfolio-container {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  #portfolio-container li:nth-child(3n) {
+    clear: left;
+  }
+  #portfolio-container li:nth-child(6n) {
+    clear: right;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-container li:nth-child(3n) {
+    clear: none;
+  }
+  #portfolio-container li:nth-child(4n) {
+    clear: left;
+  }
+}
+
+.portfolio-section {
+  margin: 1.875rem 0 0;
+}
+@media (min-width: 768px) {
+  .portfolio-section {
+    max-width: 49%;
+    float: left;
+  }
+  .portfolio-section p {
+    max-width: 79.5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio-section {
+    max-width: 32%;
+  }
+}
+
+/******************************************
+About section styles
+******************************************/
+#about {
+  background: #e0e0e0;
+  padding: 2.625rem 0;
+}
+@media (min-width: 1024px) {
+  #about {
+    margin: auto;
+    max-width: 1100px;
+    width: 95%;
+  }
+}
+@media (min-width: 768px) {
+  #about .container {
+    margin: auto auto -2.2rem;
+  }
+}
+
+#about-container {
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    max-width: 49%;
+    float: left;
+  }
+  .about-section p {
+    margin: 1.875rem auto 0;
+    max-width: 79.5%;
+  }
+}
+
+/******************************************
+Contact section styles
+******************************************/
+#contact {
+  background: #fafafa;
+}
+@media (min-width: 768px) {
+  #contact .container {
+    margin: 0 2.5%;
+    width: 95%;
+  }
+}
+@media (min-width: 1024px) {
+  #contact {
+    margin: auto;
+    max-width: 1100px;
+    width: 95%;
+  }
+}
+
+#contact-container {
+  padding: 3.9375rem 0;
+}
+#contact-container h1 {
+  margin-bottom: 1.75rem;
+}
+@media (min-width: 768px) {
+  #contact-container {
+    margin-bottom: 4.3rem;
+  }
+  #contact-container p {
+    margin: 3.2rem auto;
+    max-width: 76%;
+    font-size: 1.3rem;
+  }
+}
+
+footer {
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px rgba(0, 0, 0, 0.1) solid;
+  height: 5rem;
+}
+
+@media (min-width: 1024px) {
+  #footer-container {
+    margin-bottom: 0;
+  }
+}
+
+/******************************************
+Contact link/list styles
+******************************************/
+footer .name {
+  float: left;
+  margin-top: 2rem;
+}
+
+footer nav ul {
+  float: right;
+  margin-top: 2rem;
+}
+footer nav ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+footer nav ul a {
+  font-size: .76rem;
+}
+footer nav ul .footer-768 {
+  display: none;
+}
+@media (min-width: 768px) {
+  footer nav ul .footer-320 {
+    display: none;
+  }
+  footer nav ul .footer-768 {
+    margin: auto 0 auto 1.1rem;
+    padding: 0;
+    display: inline-block;
+  }
+}
+
+#contact-details {
+  margin-top: 2.1875rem;
+}
+#contact-details a {
+  font-weight: 600;
+  color: #8e7f7f;
+}
+
+#phone,
+#email {
+  padding: 0;
+}
+#phone li,
+#email li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 .375rem;
+}
+#phone li a:hover,
+#email li a:hover {
+  color: red;
+}
+@media (min-width: 768px) {
+  #phone li,
+  #phone li a,
+  #email li,
+  #email li a {
+    margin: auto 0.3rem;
+    max-width: 76%;
+    font-size: 1.3rem;
+  }
+}
+
+/******************************************
+Column styles
+******************************************/
+@media (min-width: 768px) {
+  .col-768-left {
+    margin-right: 1%;
+  }
+
+  .col-768-right {
+    margin-left: 1%;
+  }
+}
+@media (min-width: 1024px) {
+  .col-1024-left {
+    margin-right: 1%;
+    margin-left: 0;
+  }
+
+  .col-1024-mid {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  .col-1024-right {
+    margin-right: 0;
+    margin-left: 1%;
+  }
+}
+
+/*# sourceMappingURL=application.css.map */

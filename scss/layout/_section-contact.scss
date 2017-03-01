@@ -1,0 +1,112 @@
+/******************************************
+Contact section styles
+******************************************/
+
+#contact {
+    background: $color-background-contact;
+    @extend %clearfix;
+    @media #{$brk-narrow} {
+        .container {
+            @include width(0 2.5%, 95%);
+        }
+    }
+    @media #{$brk-wide} {
+        @include max-width(auto, 1100px, 95%);
+    }
+}
+#contact-container {
+    padding: 3.9375rem 0;
+    @extend %clearfix;
+    h1 {
+        margin-bottom: 1.75rem;
+    }
+    p {
+        @extend %text-light;
+    }
+    @media #{$brk-narrow} {
+        margin-bottom: 4.3rem;
+        p {
+            @include max-width(3.2rem auto, 76%);
+            font-size: 1.3rem;
+        }
+    }
+}
+#contact-details li {
+    @extend %text-light;
+}
+footer {
+    @include text(.9rem, $font-weight: 800);
+    @include box(0, 0);
+    list-style: none;
+    border-top: 1px $color-border-top-footer solid;
+    height: 5rem;
+    @extend %clearfix;
+}
+#footer-container {
+    @extend %clearfix;
+    @media #{$brk-wide} {
+        margin-bottom: 0;
+    }
+}
+
+/******************************************
+Contact link/list styles
+******************************************/
+
+footer .name {
+    float: left;
+    margin-top: 2rem;
+}
+footer nav {
+    @extend %clearfix;
+    ul {
+        float: right;
+        margin-top: 2rem;
+        li {
+            display: inline-block;
+            margin-left: 1rem;
+        }
+        a {
+            font-size: .76rem;
+        }
+        .footer-768 {
+            display: none;
+        }
+        @media #{$brk-narrow} {
+            .footer-320 {
+                display: none;
+            }
+            .footer-768 {
+                @include box(auto 0 auto 1.1rem, 0);
+                display: inline-block;
+            }
+        }
+    }
+}
+#contact-details {
+    margin-top: 2.1875rem;
+    @extend %clearfix;
+    a {
+        font-weight: 600;
+        color: $color-text-communication;
+    }
+}
+#phone,
+#email {
+    padding: 0;
+    li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 .375rem;
+        a:hover {
+            color: $color-text-hover;
+        }
+    }
+    @media #{$brk-narrow} {
+        li,
+        li a {
+            @include max-width(auto .3rem, 76%);
+            font-size: 1.3rem;
+        }
+    }
+}

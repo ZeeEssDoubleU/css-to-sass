@@ -1,0 +1,59 @@
+/******************************************
+Global styles
+******************************************/
+
+* {
+    @include text(16px, $color-text);
+    box-sizing: border-box;
+}
+body {
+    max-width: 100%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    background: $color-background-body;
+    text-align: center;
+}
+p {
+    @include text(16px, $line-height: 1.5rem, $font-weight: 300);
+    font-size: .95rem;
+    margin-top: .875rem;
+}
+h1 {
+    @include text(.9rem, $font-weight: 900);
+    margin-bottom: 2.75rem;
+}
+h2 {
+    @include text(1.1rem, $font-weight: 500);
+    margin: 1.4375rem 0 0 0;
+}
+.border {
+    border: solid $color-border 5px;
+    border-radius: 10px;
+}
+.container {
+    max-width: 95%;
+    margin: auto 2.5%;
+    @media #{$brk-wide} {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+/******************************************
+Global image styles
+******************************************/
+
+img {
+    max-width: 100%;
+}
+
+/******************************************
+Global link/list styles
+******************************************/
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}

@@ -1,0 +1,32 @@
+/******************************************
+About section styles
+******************************************/
+
+#about {
+    background: $color-background-about;
+    padding: 2.625rem 0;
+    @extend %clearfix;
+    @media #{$brk-wide} {
+        @include max-width(auto, 1100px, 95%);
+    }
+    .container {
+        @extend %clearfix;
+        @media #{$brk-narrow} {
+            margin: auto auto -2.2rem;
+        }
+    }
+}
+#about-container {
+    list-style: none;
+    padding: 0;
+    @extend %clearfix;
+}
+.about-section {
+    @media #{$brk-narrow} {
+        max-width: 49%;
+        float: left;
+        p {
+            @include max-width(1.875rem auto 0, 79.5%);
+        }
+    }
+}
