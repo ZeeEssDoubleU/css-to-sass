@@ -27,10 +27,9 @@ body {
 }
 
 p {
-  font-size: 16px;
+  font-size: 0.95rem;
   line-height: 1.5rem;
   font-weight: 300;
-  font-size: .95rem;
   margin-top: .875rem;
 }
 
@@ -74,6 +73,7 @@ Global link/list styles
 ******************************************/
 a {
   text-decoration: none;
+  transition-duration: .5s;
 }
 
 a:hover {
@@ -115,10 +115,10 @@ Home section styles
   #home p {
     margin: auto;
     max-width: 56%;
-    float: left;
     font-size: 1.3rem;
-    text-align: left;
     line-height: 1.7rem;
+    float: left;
+    text-align: left;
     padding: 0;
   }
 }
@@ -204,8 +204,8 @@ header nav ul li {
 }
 header nav ul li a {
   font-size: 0.9rem;
-  font-weight: 800;
   color: rgba(0, 0, 0, 0.8);
+  font-weight: 800;
 }
 @media (min-width: 1024px) {
   header nav ul li a {
@@ -380,7 +380,7 @@ footer nav ul li {
   margin-left: 1rem;
 }
 footer nav ul a {
-  font-size: .76rem;
+  font-size: 0.76rem;
 }
 footer nav ul .footer-768 {
   display: none;
@@ -400,8 +400,8 @@ footer nav ul .footer-768 {
   margin-top: 2.1875rem;
 }
 #contact-details a {
-  font-weight: 600;
   color: #8e7f7f;
+  font-weight: 600;
 }
 
 #phone,

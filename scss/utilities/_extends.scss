@@ -11,6 +11,5 @@
 // Light text extend
 
 %text-light {
-    font-size: 1.05rem;
-    color: $color-text-light;
+    @include text(1.05rem, $color-text-light);
 }

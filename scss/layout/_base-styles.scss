@@ -14,8 +14,7 @@ body {
     text-align: center;
 }
 p {
-    @include text(16px, $line-height: 1.5rem, $font-weight: 300);
-    font-size: .95rem;
+    @include text(.95rem, $line-height: 1.5rem, $font-weight: 300);
     margin-top: .875rem;
 }
 h1 {
@@ -53,7 +52,8 @@ Global link/list styles
 
 a {
     text-decoration: none;
+    transition-duration: .5s;
 }
 a:hover {
-    color: red;
+    @include text($color: $color-text-hover);
 }

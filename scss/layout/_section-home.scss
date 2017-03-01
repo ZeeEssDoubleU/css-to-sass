@@ -27,10 +27,9 @@ Home section styles
         @extend %text-light;
         @media #{$brk-narrow} {
             @include max-width(auto, 56%);
+            @include text(1.3rem, $line-height: 1.7rem);
             float: left;
-            font-size: 1.3rem;
             text-align: left;
-            line-height: 1.7rem;
             padding: 0;
         }
     }
@@ -46,7 +45,7 @@ header {
     }
 }
 header .name {
-    font-size: 1.5rem;
+    @include text(1.5rem);
     margin: 1.375rem auto;
     margin-top: 0;
     @media #{$brk-wide} {
@@ -96,8 +95,7 @@ header nav ul {
             display: inline-block;
         }
         a {
-            @include text(.9rem, $font-weight: 800);
-            color: $color-text-nav;
+            @include text(.9rem, $color-text-nav, 800);
             @media #{$brk-wide} {
                 padding: 0;
             }
