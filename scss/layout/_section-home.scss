@@ -1,0 +1,119 @@
+/******************************************
+Home section styles
+******************************************/
+
+#home {
+    padding-bottom: 2.3125rem;
+    background: rgba(175, 175, 175, 1);
+    @extend %clearfix;
+    @media #{$brk-narrow} {
+        margin: 0 0;
+    }
+    @media #{$brk-wide} {
+        width: 95%;
+        max-width: 1100px;
+        margin: 0 auto;
+        background: rgba(175, 175, 175, 1);
+    }
+    .container {
+        @extend %clearfix;
+        @media #{$brk-narrow} {
+            width: 95%;
+            margin: 0 2.5%;
+            img {
+                float: right;
+                max-width: 42%;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    p {
+        font-size: 1.05rem;
+        color: rgba(0, 0, 0, .7);
+        @media #{$brk-narrow} {
+            float: left;
+            max-width: 56%;
+            font-size: 1.3rem;
+            text-align: left;
+            line-height: 1.7rem;
+            padding: 0;
+            margin: auto;
+        }
+    }
+}
+header {
+    padding-top: 1.375rem;
+    @extend %clearfix;
+    @media #{$brk-narrow} {
+        padding: 3rem 0;
+    }
+    @media #{$brk-wide} {
+        padding: 3.7rem 0 2.0rem;
+    }
+}
+header .name {
+    font-size: 1.5rem;
+    margin: 1.375rem auto;
+    margin-top: 0;
+    @media #{$brk-wide} {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/******************************************
+Home image styles
+******************************************/
+
+#home img {
+    max-width: 67%;
+    /*200px/320px*/
+    margin: 1.875rem 0 .75rem 0;
+}
+
+/******************************************
+Home link/list styles
+******************************************/
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    @media #{$brk-narrow} {
+        display: inline-block;
+        padding: 0;
+        margin: auto;
+    }
+    @media #{$brk-wide} {
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        height: 2.5rem;
+        margin: .3125rem auto;
+        background: white;
+        padding: .5rem 0;
+        border-radius: 10px;
+        @media #{$brk-narrow} {
+            display: inline-block;
+            margin-left: 1.1rem;
+            margin-right: 1.1rem;
+            background: rgba(175, 175, 175, 1);
+        }
+        @media #{$brk-wide} {
+            display: inline-block;
+            margin: .3rem 0 0 2.5rem;
+            padding: 0;
+        }
+        a {
+            font-size: .9rem;
+            font-weight: 800;
+            color: rgba(0, 0, 0, .8);
+            @media #{$brk-wide} {
+                padding: 0;
+            }
+        }
+    }
+}

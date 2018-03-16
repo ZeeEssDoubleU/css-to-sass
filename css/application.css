@@ -1,0 +1,474 @@
+#home:after, #home .container:after, header:after, #portfolio:after, #portfolio .container:after, #portfolio-container:after, #about:after, #about .container:after, #about-container:after, #contact:after, #contact-container:after, footer:after, #footer-container:after, footer nav:after, #contact-details:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/******************************************
+Global styles
+******************************************/
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: black;
+}
+
+body {
+  max-width: 100%;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  background: white;
+  text-align: center;
+}
+
+p {
+  font-size: .95rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-top: .875rem;
+}
+
+h1 {
+  font-size: .9rem;
+  font-weight: 900;
+  margin-bottom: 2.75rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 1.4375rem 0 0 0;
+}
+
+.border {
+  border: solid white 5px;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 95%;
+  margin: auto 2.5%;
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+/******************************************
+Global image styles
+******************************************/
+img {
+  max-width: 100%;
+}
+
+/******************************************
+Global link/list styles
+******************************************/
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+/******************************************
+Home section styles
+******************************************/
+#home {
+  padding-bottom: 2.3125rem;
+  background: #afafaf;
+}
+@media (min-width: 768px) {
+  #home {
+    margin: 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  #home {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #afafaf;
+  }
+}
+@media (min-width: 768px) {
+  #home .container {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+  #home .container img {
+    float: right;
+    max-width: 42%;
+    padding: 0;
+    margin: 0;
+  }
+}
+#home p {
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+@media (min-width: 768px) {
+  #home p {
+    float: left;
+    max-width: 56%;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 1.7rem;
+    padding: 0;
+    margin: auto;
+  }
+}
+
+header {
+  padding-top: 1.375rem;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 3rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 3.7rem 0 2.0rem;
+  }
+}
+
+header .name {
+  font-size: 1.5rem;
+  margin: 1.375rem auto;
+  margin-top: 0;
+}
+@media (min-width: 1024px) {
+  header .name {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/******************************************
+Home image styles
+******************************************/
+#home img {
+  max-width: 67%;
+  /*200px/320px*/
+  margin: 1.875rem 0 .75rem 0;
+}
+
+/******************************************
+Home link/list styles
+******************************************/
+header nav ul {
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  header nav ul {
+    display: inline-block;
+    padding: 0;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  header nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+}
+header nav ul li {
+  height: 2.5rem;
+  margin: .3125rem auto;
+  background: white;
+  padding: .5rem 0;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  header nav ul li {
+    display: inline-block;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    background: #afafaf;
+  }
+}
+@media (min-width: 1024px) {
+  header nav ul li {
+    display: inline-block;
+    margin: .3rem 0 0 2.5rem;
+    padding: 0;
+  }
+}
+header nav ul li a {
+  font-size: .9rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media (min-width: 1024px) {
+  header nav ul li a {
+    padding: 0;
+  }
+}
+
+/******************************************
+Portfolio section styles
+******************************************/
+#portfolio {
+  background: #c8c8c8;
+  padding: 2.625rem 0;
+}
+@media (min-width: 1024px) {
+  #portfolio {
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  #portfolio .container {
+    margin: auto auto -2.2rem;
+  }
+}
+
+#portfolio-container {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  #portfolio-container li:nth-child(3n) {
+    clear: left;
+  }
+  #portfolio-container li:nth-child(6n) {
+    clear: right;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-container li:nth-child(3n) {
+    clear: none;
+  }
+  #portfolio-container li:nth-child(4n) {
+    clear: left;
+  }
+}
+
+.portfolio-section {
+  margin: 1.875rem 0 0;
+}
+@media (min-width: 768px) {
+  .portfolio-section {
+    max-width: 49%;
+    float: left;
+  }
+  .portfolio-section p {
+    max-width: 79.5%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio-section {
+    max-width: 32%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-768-left {
+    margin-right: 1%;
+  }
+
+  .col-768-right {
+    margin-left: 1%;
+  }
+}
+@media (min-width: 1024px) {
+  .col-1024-left {
+    margin-right: 1%;
+    margin-left: 0;
+  }
+
+  .col-1024-mid {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  .col-1024-right {
+    margin-right: 0;
+    margin-left: 1%;
+  }
+}
+/******************************************
+About section styles
+******************************************/
+#about {
+  background: #e1e1e1;
+  padding: 2.625rem 0;
+}
+@media (min-width: 1024px) {
+  #about {
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  #about .container {
+    margin: auto auto -2.2rem;
+  }
+}
+
+#about-container {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  #about-container {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+#about-section {
+  margin: 1.875rem 0 0;
+}
+@media (min-width: 768px) {
+  #about-section {
+    max-width: 49%;
+    float: left;
+  }
+  #about-section p {
+    max-width: 79.5%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+  }
+}
+
+/******************************************
+Contact section styles
+******************************************/
+#contact {
+  background: #fafafa;
+}
+@media (min-width: 768px) {
+  #contact .container {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+}
+@media (min-width: 1024px) {
+  #contact {
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+
+#contact-container {
+  padding: 3.9375rem 0;
+}
+#contact-container h1 {
+  margin-bottom: 1.75rem;
+}
+@media (min-width: 768px) {
+  #contact-container {
+    margin-bottom: 4.3rem;
+  }
+  #contact-container p {
+    font-size: 1.3rem;
+    max-width: 76%;
+    margin: 3.2rem auto;
+  }
+}
+
+#contact-container p,
+#contact-details li {
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px rgba(0, 0, 0, 0.1) solid;
+  font-size: .9rem;
+  font-weight: 800;
+  height: 5rem;
+}
+
+@media (min-width: 1024px) {
+  #footer-container {
+    margin-bottom: 0;
+  }
+}
+
+/******************************************
+Contact link/list styles
+******************************************/
+footer .name {
+  float: left;
+  margin-top: 2rem;
+}
+
+footer nav ul {
+  float: right;
+  margin-top: 2rem;
+}
+footer nav ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+footer nav ul li a {
+  font-size: .76rem;
+}
+footer nav ul .footer-768 {
+  display: none;
+}
+@media (min-width: 768px) {
+  footer nav ul .footer-320 {
+    display: none;
+  }
+  footer nav ul .footer-768 {
+    display: inline-block;
+    padding: 0;
+    margin: auto 0 auto 1.1rem;
+  }
+}
+
+#contact-details {
+  margin-top: 2.1875rem;
+}
+#contact-details a {
+  font-weight: 600;
+  color: #8e7f7f;
+}
+
+#phone,
+#email {
+  padding: 0;
+}
+#phone li,
+#email li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 .375rem;
+}
+#phone li a:hover,
+#email li a:hover {
+  color: red;
+}
+@media (min-width: 768px) {
+  #phone li,
+  #phone li a,
+  #email li,
+  #email li a {
+    font-size: 1.3rem;
+    max-width: 76%;
+    margin: auto .3rem;
+  }
+}
+
+/*# sourceMappingURL=application.css.map */
